@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app-assets/fonts/fontawesome-6.1.1/css/all.min.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <i class="fa-solid fa-user"></i>
+    <table>
+        <thead>
+            <tr>
+                <th>Program BMI</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Masukan tinggi badan (cm)</td>
+            </tr>
+            <tr>
+                <td><input onkeyup="hitung()" type="text" id="ipt_t"></td>
+            </tr>
+            <tr>
+                <td>Masukan berat badan (kg)</td>
+            </tr>
+            <tr>
+                <td><input onkeyup="hitung()" type="text" id="ipt_b"></td>
+                <td><button onclick="myKg()" id="kg" disabled>kg</button></td>
+                <td><button onclick="myGr()" id="gr">gr</button></td>
+            <tr>
+                <td><input type="text" id="ipt_b_" value=""></td>
+            </tr>
+            <!-- <tr>
+                <td><button onclick="hitung()">Hitung</button></td>
+            </tr> -->
+        </tbody>
+        <tfoot>
+            <tr>
+                <td id="bmi">Hasil perhitungan BMI :</td>
+            </tr>
+            <tr>
+                <td>Keterangan :</td>
+            </tr>
+            <tr>
+                <td id="keterangan"></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
